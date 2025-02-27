@@ -1,61 +1,68 @@
-h1{
+h1, .nadpis2, .odstavec, img, .odkaz, .odkaz2, .odkaz3 {
+
+}
+
+h1 {
     color: rgb(56, 102, 87);
     font-family: Fantasy;
     text-align: center;
 }
 
-
-
-.nadpis2{
+.nadpis2 {
     color: rgb(56, 102, 87);
     font-family: Fantasy;
     text-align: center;
     margin-top: 50px;
 }
 
-.odstavec{
+.odstavec {
     color: rgb(146, 195, 179);
     font-family: Fantasy;
     text-align: center;
     margin: 0 500px auto;
-}   
- img{
+}
+
+img {
     width: 400px;
-    height: auto ; 
-    margin: 50px 550px auto;
+    height: auto;
+    margin: 50px auto;
     border-radius: 50px;
- }
-
- .odkaz{
-font-size: 30PX;
-margin-left:200px ;
-margin-top: 50px;
-text-decoration: dotted;
-color: rgb(56, 102, 87);
+    display: block;
 }
 
-
-.odkaz2{
-    font-size: 30PX;
-margin-left:300px ;
-margin-top: 50px;
-text-decoration: dotted;
-color: rgb(56, 102, 87);
-}
-
-
-.odkaz3{
-    font-size: 30PX;
-    margin-left:400px ;
-    margin-top: 50px;
+.odkaz, .odkaz2, .odkaz3 {
+    font-size: 30px;
     text-decoration: dotted;
     color: rgb(56, 102, 87);
+    margin-top: 50px;
 }
 
+.odkaz {
+    margin-left: 200px;
+}
 
-.nothing{
-    color: rgb(255, 0, 0);
-    font-family: Fantasy;
-    text-align: center;
-    margin-top: 50px;
+.odkaz2 {
+    margin-left: 300px;
+}
+
+.odkaz3 {
+    margin-left: 400px;
+}
+
+/* Media queries pro mobilní zařízení */
+@media (max-width: 600px) {
+    .odstavec {
+        margin: 0 20px auto;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+        border-radius: 50px;
+    }
+    .odkaz, .odkaz2, .odkaz3 {
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
 }
