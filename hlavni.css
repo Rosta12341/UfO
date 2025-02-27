@@ -1,0 +1,61 @@
+h1{
+    color: rgb(56, 102, 87);
+    font-family: Fantasy;
+    text-align: center;
+}
+
+
+
+.nadpis2{
+    color: rgb(56, 102, 87);
+    font-family: Fantasy;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.odstavec{
+    color: rgb(146, 195, 179);
+    font-family: Fantasy;
+    text-align: center;
+    margin: 0 500px auto;
+}   
+ img{
+    width: 400px;
+    height: auto ; 
+    margin: 50px 550px auto;
+    border-radius: 50px;
+ }
+
+ .odkaz{
+font-size: 30PX;
+margin-left:200px ;
+margin-top: 50px;
+text-decoration: dotted;
+color: rgb(56, 102, 87);
+}
+
+
+.odkaz2{
+    font-size: 30PX;
+margin-left:300px ;
+margin-top: 50px;
+text-decoration: dotted;
+color: rgb(56, 102, 87);
+}
+
+
+.odkaz3{
+    font-size: 30PX;
+    margin-left:400px ;
+    margin-top: 50px;
+    text-decoration: dotted;
+    color: rgb(56, 102, 87);
+}
+
+
+.nothing{
+    color: rgb(255, 0, 0);
+    font-family: Fantasy;
+    text-align: center;
+    margin-top: 50px;
+}
