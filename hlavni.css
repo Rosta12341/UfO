@@ -1,68 +1,104 @@
-h1, .nadpis2, .odstavec, img, .odkaz, .odkaz2, .odkaz3 {
-
+/* ZÁKLADNÍ STYLY */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: rgb(56, 102, 87);
-    font-family: Fantasy;
+body {
+    zoom: 100%;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: rgb(80, 150, 125);
+    height: 80px;
+}
+
+nav ul {
+    width: 100%;
     text-align: center;
+    padding: 0;
 }
 
-.nadpis2 {
-    color: rgb(56, 102, 87);
-    font-family: Fantasy;
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: 30%;
     text-align: center;
-    margin-top: 50px;
+    font-size: 18px;
 }
 
-.odstavec {
-    color: rgb(146, 195, 179);
-    font-family: Fantasy;
-    text-align: center;
-    margin: 0 500px auto;
-}
-
-img {
-    width: 400px;
-    height: auto;
-    margin: 50px auto;
-    border-radius: 50px;
-    display: block;
-}
-
-.odkaz, .odkaz2, .odkaz3 {
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Papyrus', 'Impact', fantasy, sans-serif;
     font-size: 30px;
-    text-decoration: dotted;
-    color: rgb(56, 102, 87);
-    margin-top: 50px;
+    margin-bottom: 0;
+    margin: 0 auto;
 }
 
-.odkaz {
-    margin-left: 200px;
+
+nav ul li a:hover {
+    border-bottom: 2px solid white;
 }
 
-.odkaz2 {
-    margin-left: 300px;
+/* HLAVNÍ ODDÍL */
+.fp {
+    background-color: rgb(154, 221, 198);
+    text-align: center;
+    padding: 20px;
 }
 
-.odkaz3 {
-    margin-left: 400px;
+.fp img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
 }
 
-/* Media queries pro mobilní zařízení */
-@media (max-width: 600px) {
-    .odstavec {
-        margin: 0 20px auto;
+.nadpis1 {
+    text-align: center;
+    color: rgb(67, 115, 97);
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+/* ODSTAVCE */
+.odstavec {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 10px;
+    color: rgb(67, 115, 97);
+}
+
+/* Responzivní design pro mobilní zařízení */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
     }
-    img {
+
+    nav ul li {
         width: 100%;
-        height: auto;
-        margin: 20px auto;
-        border-radius: 50px;
     }
-    .odkaz, .odkaz2, .odkaz3 {
-        font-size: 20px;
-        margin-left: 10px;
-        margin-top: 20px;
+
+    nav ul li a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .nadpis1 {
+        font-size: 30px;
+    }
+
+    .fp img {
+        width: 100%;
+    }
+
+    .odstavec {
+        font-size: 16px;
+        margin: 10px;
     }
 }
